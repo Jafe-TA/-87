@@ -1,0 +1,30 @@
+<!--
+
+- Validar el ingreso de una hora con el formato hh:mm:ss o hh:mm
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+var oracion='el pensamiento en la cuarentena es que la cuarentena no es algo que elegimos';
+var patron=/el/gi;
+var vec=patron.exec(oracion);
+document.write(vec.index); //0
+document.write('<br>');
+vec=patron.exec(oracion);
+document.write(vec.index); //7
+document.write('<br>');
+vec=patron.exec(oracion);
+document.write(vec.index); //34
+document.write('<br>');
+vec=patron.exec(oracion);
+document.write(vec); //null
+</script>
+
+</body>
+</html>
